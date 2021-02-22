@@ -1,0 +1,206 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*//// basic elements//// */
+
+
+*	{
+	margin: 0;
+	padding: 0;
+	}
+
+img	{
+	border: none;
+	}
+	
+body	{
+	font-family: "Trebuchet MS", Verdana, Arial;
+	font-size: 90%;
+	color: #202020;
+	line-height: 150%;
+	background: #202020 url(images/layout_spacer.gif) repeat-y 0;
+	text-align: justify;
+	}
+
+* html #container	{
+	height: 100%;
+	}
+
+html, body	{
+	height: 100%;
+	}
+
+h1	{
+	font-size: 14px;
+	color: #276698;
+	}
+
+a	{
+	text-decoration: none;
+	color: #fff;
+	}
+
+a:hover	{
+	color: #2F769B;
+	}
+
+span	{
+	color:#2F769B;
+	}
+
+/* ///   div layout   ///*/
+
+#container	{
+	min-height: 100%;
+	}
+
+#header	{
+	width: 100%;
+	height: 200px;
+	}
+	
+#header h1 {
+	width: 650px;
+	height: 200px;
+}
+
+#header h1 a {
+	width: 650px;
+	height: 200px;
+	text-indent: -9999px;
+	display: block;
+	background: url(images/header.jpg)
+}
+
+#navdiv	{
+	width: 100%;
+	height: 40px;
+	background: #000;
+	border-top: 1px solid #808080;
+	border-bottom: 1px solid #808080;
+	}
+
+#tele	{
+	position: absolute;
+	left: 650px;
+	top: 34px;
+	width: 280px;
+	height: 207px;
+	background: url(images/telephone.jpg) no-repeat;
+	}
+
+#title	{
+	width: 650px;
+	height: 232px;
+	}
+
+#content	{
+	width: 600px;
+	height: 100%;
+	padding: 25px 25px 50px 25px;
+	}
+
+#contact	{
+	position: absolute;
+	left: 655px;
+	top: 265px;
+	width: 235px;
+	padding: 60px 15px 5px 0;
+	text-align: right;
+	color: #fff;
+	background: #202020 url(images/contact.jpg) no-repeat top right;
+	}
+	
+#skill	{
+	position: absolute;
+	top: 265px;
+	left: 10px;
+	width: 141px;
+	height: 113px;
+	}
+#footer	{
+	margin: -35px auto 0 auto;
+	background: #000;
+	width: 100%;
+	height: 30px;
+	font-size: 11px;
+	padding-top: 10px;
+	border-top: 1px solid #808080;
+	color: #fff;
+	}
+
+#clear_footer	{
+	height: 40px;
+	}
+
+/*///   class and id's   ///*/
+
+ul.bullet	{
+	padding: 25px;
+	list-style-image: url(images/bullet.gif);
+	}
+
+a.content	{
+	color: #202020;
+	font-weight: bold;
+	}
+
+a:hover.content	{
+	color:#417698;
+	}
+	
+
+/*///   CONTACT FORM   ///*/
+
+fieldset	{ border: none; }
+input		{ margin-bottom: 15px; }
+
+
+	
+/*///   navigation   ///*/
+
+ul#nav 		{ background:url(images/nav.jpg); position: absolute; top: 201px; left: 3px }
+ul#nav li 	{ float: left; list-style-type: none }
+ul#nav li a { height:40px; display:block; position:absolute; top:0; text-indent:-9999px; outline:none }
+
+li#navHome a, li#navHealth a, li#navServices a, li#navProjects a {background: url(images/nav.jpg) }
+
+li#navHome a						{ background-position: -32px 0; width: 51px; left: 32px }
+li#navHome a:hover					{ background-position: -32px -40px }
+body#pageHome li#navHome a 			{ background-position: -32px -80px }
+
+li#navHealth a						{ background-position: -125px 0; width: 134px; left: 125px }
+li#navHealth a:hover				{ background-position: -125px -40px }
+body#pageHealth li#navHealth a 		{ background-position: -125px -80px }
+
+li#navServices a					{ background-position: -304px 0; width: 74px; left: 304px }
+li#navServices a:hover				{ background-position: -304px -40px }
+body#pageServices li#navServices a 	{ background-position: -304px -80px }
+
+li#navProjects a					{ background-position: -420px 0; width: 76px; left: 420px }
+li#navProjects a:hover				{ background-position: -420px -40px }
+body#pageProjects li#navProjects a 	{ background-position: -420px -80px }
+
+
+/*	Measurements for tab nav:
+
+The distance from the top to the...
+
+initial state = 0px  
+rollover state = 40px   
+selected state = 80px   
+
+The distance from the far left to the...
+
+home buttom= 32
+health= 125
+services= 304
+projects= 420
+
+The width of...
+
+home button= 51
+health= 134
+services= 74
+projects= 76
+*/
